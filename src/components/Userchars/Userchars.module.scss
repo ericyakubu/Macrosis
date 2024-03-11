@@ -9,7 +9,13 @@
   &__title {
     @include header2();
     line-height: 1;
-    margin-bottom: -5px;
+  }
+
+  &__inputs {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 48px;
   }
 
   &__input {

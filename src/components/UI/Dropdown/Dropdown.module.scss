@@ -12,6 +12,20 @@
     position: relative;
 
     z-index: +1 !important;
+
+    svg {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      transition: $transition-fast;
+
+      path {
+        fill: $white;
+        opacity: 0.5;
+      }
+    }
   }
 
   &__text {
@@ -52,6 +66,10 @@
 
     &__active {
       border-radius: 10px 10px 0 0;
+
+      svg {
+        transform: rotate(180deg) translateY(16px);
+      }
     }
   }
 }

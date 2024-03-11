@@ -18,14 +18,9 @@ export const LinksTop: LinksType[] = [
     name: "Progress",
   },
   {
-    link: "/history",
-    icon: "history",
-    name: "History",
-  },
-  {
     link: "/recipes",
-    icon: "book",
-    name: "Recipes",
+    icon: "apple",
+    name: "Diet",
   },
 ];
 
