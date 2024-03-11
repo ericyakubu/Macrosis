@@ -1,0 +1,14 @@
+// White
+$white: var(--color-primary);
+$white-transperent: var(--color-primary-transperent);
+
+// Grey
+$grey: var(--color-secondary);
+$grey-dark: var(--color-background);
+$grey-light: var(--color-secondary-alt);
+
+//Black
+$black-transperent: var(--color-primary-opposite-transperent);
+
+//Transition
+$transition-fast: all 0.2s ease-in-out;

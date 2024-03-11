@@ -1,0 +1,40 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.pieChart {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  &__chart {
+    width: 250px;
+  }
+
+  &__labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__label {
+    text-transform: capitalize;
+    @include text-2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+      width: 12px;
+      height: 12px;
+      background: red;
+      border-radius: 2px;
+      border: 2px solid $white;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

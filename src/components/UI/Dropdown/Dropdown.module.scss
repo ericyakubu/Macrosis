@@ -1,0 +1,57 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.dropdown {
+  width: fit-content;
+  &__selected {
+    border-radius: 10px;
+    background: $grey-light;
+    width: 250px;
+
+    @include box-shadow-tiny();
+    position: relative;
+
+    z-index: +1 !important;
+  }
+
+  &__text {
+    @include text-2();
+    opacity: 0.5;
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+    @include box-shadow-tiny();
+    transform: translateY(-10px);
+    z-index: 1;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    height: 0;
+    transition: $transition-fast;
+
+    &__option {
+      &:first-of-type {
+        padding-top: 25px;
+      }
+      &:hover {
+        background: $grey;
+        opacity: 1;
+      }
+    }
+
+    &__active {
+      height: 175px;
+      overflow-y: auto;
+    }
+  }
+
+  &__button {
+    text-align: left;
+    padding: 15px 25px;
+
+    &__active {
+      border-radius: 10px 10px 0 0;
+    }
+  }
+}

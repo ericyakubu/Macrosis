@@ -1,0 +1,7 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.layout {
+  display: flex;
+  overflow-y: hidden;
+}

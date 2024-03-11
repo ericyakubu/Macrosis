@@ -1,0 +1,16 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.landing {
+  padding: 24px;
+  height: fit-content;
+  max-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+  column-count: 2;
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

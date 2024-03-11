@@ -1,0 +1,41 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.toggle {
+  position: relative;
+  display: flex;
+  transition: $transition-fast;
+  align-items: center;
+
+  &::after {
+    @include underline(30%);
+    bottom: -5px;
+    left: 10%;
+    height: 1px;
+  }
+
+  &__init {
+    &::after {
+      left: 90%;
+      transform: translateX(-100%);
+    }
+  }
+
+  &__option {
+    min-width: 35px;
+    position: relative;
+    @include text-2;
+    opacity: 0.5;
+    margin: 0 10px;
+
+    &__active {
+      color: $white;
+      opacity: 1;
+    }
+  }
+
+  &__separator {
+    @include text-2;
+    opacity: 0.5;
+  }
+}

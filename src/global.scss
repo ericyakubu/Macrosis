@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ojuju:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "../src/styles/variables.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-background: rgb(24, 24, 24);
+  --color-primary: rgb(255, 255, 255);
+  --color-primary-opposite-transperent: rgba(0, 0, 0, 0.25);
+  --color-primary-transperent: rgba(255, 255, 255, 0.5);
+  --color-secondary: rgb(128, 128, 128);
+  --color-secondary-alt: rgb(30, 30, 30);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: rgb(231, 231, 231); //needs checking
+    --color-primary: rgb(0, 0, 0);
+    --color-secondary: rgb(128, 128, 128); //needs checking
+    --color-secondary-alt: rgb(225, 225, 225); //needs checking
+  }
+}
+
+body {
+  overflow-x: hidden;
+  background: $grey-dark;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+a {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  background: none;
+  border: none;
+}

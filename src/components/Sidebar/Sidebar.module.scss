@@ -1,0 +1,39 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 15px 15px 0;
+  height: 100vh;
+  padding: 24px;
+  width: 20vw;
+  min-width: 348px;
+  background: $grey-light;
+  @include box-shadow-small();
+
+  &__title {
+    @include header1();
+    margin-bottom: 35px;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  position: relative;
+  margin-bottom: 40px;
+
+  &:not(:last-child) {
+    &:after {
+      @include underline();
+      transform: translateY(20px);
+    }
+  }
+
+  &__user {
+    @include navlink;
+  }
+}

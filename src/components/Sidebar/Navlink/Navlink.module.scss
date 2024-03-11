@@ -1,0 +1,11 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.nav__link {
+  @include navlink;
+
+  &__active {
+    @include header3(1);
+    letter-spacing: 2px;
+  }
+}

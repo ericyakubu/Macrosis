@@ -1,0 +1,68 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+$outline: 1px solid $white-transperent;
+
+// label
+$labelOpacityInit: 0.5;
+$labelOpacityActive: 0.75;
+$labelPosInit: translate(25px, 0);
+$labelPosActive: translate(10px, -50px);
+
+.container {
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  &__active {
+    .container__label {
+      transform: $labelPosActive;
+      opacity: $labelOpacityActive;
+    }
+    .container__input {
+      outline: $outline;
+      @include box-shadow-tiny();
+    }
+  }
+
+  &__disabled {
+    .container__label {
+      transform: $labelPosInit !important;
+      opacity: $labelOpacityInit !important;
+    }
+  }
+
+  &__label {
+    @include text-2();
+    position: absolute;
+    transform: $labelPosInit;
+    opacity: $labelOpacityInit;
+    font-weight: normal;
+    transition: $transition-fast;
+  }
+
+  &__input {
+    padding: 15px 25px;
+    border-radius: 10px;
+    background: $grey-light;
+    width: 250px;
+    @include text-2();
+    @include box-shadow-tiny();
+  }
+
+  &:hover {
+    .container__label {
+      transform: $labelPosActive;
+      opacity: $labelOpacityActive;
+    }
+
+    .container__input {
+      outline: $outline;
+      @include box-shadow-tiny();
+
+      &[disabled] {
+        outline: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+export type IconNames = 
+  | "settings"
+  | "user"
+  | "graph"
+  | "history"
+  | "book"
+  | "bookmark"
+  | "logout"
+  | "login"
+  | "community"
+  | "donate"
+  | "help"
+  | "faq"
+  | "chart-pie"
+
