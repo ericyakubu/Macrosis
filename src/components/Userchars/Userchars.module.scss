@@ -4,7 +4,7 @@
 .container {
   flex-direction: column;
   align-items: flex-start;
-  gap: 48px;
+  gap: 64px;
 
   &__title {
     @include header2();

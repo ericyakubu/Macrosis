@@ -12,11 +12,13 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 48px;
   width: 100%;
+  @include grid;
+  gap: 48px;
+  transition: $transition-fast;
 
   &__top {
-    @include grid;
+    // @include grid;
   }
 
   &__workout {
@@ -26,7 +28,7 @@
     &_active {
       height: 100%;
       min-height: fit-content;
-      @include grid;
+      // @include grid;
     }
   }
 
@@ -35,6 +37,7 @@
     flex-direction: column;
     gap: 24px;
     width: 100%;
+    transition: $transition-fast;
 
     &__title {
       @include header2();
