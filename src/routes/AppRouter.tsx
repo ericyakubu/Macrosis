@@ -1,5 +1,5 @@
 import { Layout } from "@/components";
-import { Landing } from "@/pages";
+import { Diet, Landing, Progress } from "@/pages";
 import { FunctionComponent } from "react";
 import {
   Route,
@@ -13,6 +13,9 @@ const AppRouter: FunctionComponent = () => {
     createRoutesFromElements(
       <Route element={<Layout />}>
         <Route path="/" element={<Landing />} />
+        <Route path="/diet" element={<Diet />} />
+        <Route path="/progress" element={<Progress />} />
+        <Route path="*" element={<Landing />} />
       </Route>
     )
   );

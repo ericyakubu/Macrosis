@@ -48,7 +48,8 @@
       &:first-of-type {
         padding-top: 25px;
       }
-      &:hover {
+      &:hover,
+      &:active {
         background: $grey;
         opacity: 1;
       }

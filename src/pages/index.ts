@@ -1,2 +1,5 @@
 import Landing from "./Landing";
-export { Landing };
+import Progress from "./Progress";
+import Diet from "./Diet";
+
+export { Landing, Progress, Diet };

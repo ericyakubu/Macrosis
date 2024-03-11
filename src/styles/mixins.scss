@@ -101,7 +101,8 @@
   @include header3();
   transition: $transition-fast;
 
-  &:hover {
+  &:hover,
+  &:active {
     cursor: pointer;
     @include header3(1);
     letter-spacing: 2px;

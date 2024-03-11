@@ -42,7 +42,8 @@ a {
 
 button,
 a {
-  &:hover {
+  &:hover,
+  &:active {
     cursor: pointer;
   }
 }

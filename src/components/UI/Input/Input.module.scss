@@ -50,7 +50,8 @@ $labelPosActive: translate(10px, -50px);
     @include box-shadow-tiny();
   }
 
-  &:hover {
+  &:hover,
+  &:active {
     .container__label {
       transform: $labelPosActive;
       opacity: $labelOpacityActive;
