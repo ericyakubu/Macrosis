@@ -2,8 +2,7 @@ import { FunctionComponent } from "react";
 import classes from "./Sidebar.module.scss";
 import { Link } from "react-router-dom";
 import { LinksBottom, LinksTop } from "./constants";
-import Navlink from "./Navlink";
-import { Icon } from "../UI";
+import { Icon, Navlink } from "../UI";
 
 const Sidebar: FunctionComponent = () => {
   return (
