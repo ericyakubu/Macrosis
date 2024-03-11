@@ -1,5 +1,6 @@
 import { FunctionComponent, MouseEvent, ReactNode } from "react";
 import cn from "classnames";
+import classes from "./Button.module.scss";
 
 type Props = {
   children: ReactNode;
@@ -21,7 +22,7 @@ const Button: FunctionComponent<Props> = ({
   return (
     <button
       onClick={onClick}
-      className={cn(className)}
+      className={cn(className, classes.button)}
       id={id}
       disabled={disabled}
       type={type}

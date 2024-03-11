@@ -1,2 +1,20 @@
 @import "../../../styles/mixins.scss";
 @import "../../../styles/variables.scss";
+
+.button {
+  padding: 15px 25px;
+  border-radius: 10px;
+  background: $grey-light;
+  width: 250px;
+  @include text-2();
+  @include box-shadow-tiny();
+  gap: 24px;
+  text-align: center;
+
+  svg {
+    margin-right: 12px;
+    path {
+      fill: $white;
+    }
+  }
+}

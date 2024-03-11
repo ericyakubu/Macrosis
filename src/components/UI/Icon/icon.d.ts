@@ -14,4 +14,5 @@ export type IconNames =
   | "chart-pie"
   | "apple"
   | "arrow-down"
+  | "save"
 
