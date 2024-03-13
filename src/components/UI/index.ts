@@ -5,5 +5,6 @@ import Container from "./Container";
 import Toggle from "./Toggle";
 import Dropdown from "./Dropdown";
 import Navlink from "./Navlink";
+import Loader from "./Loader";
 
-export { Button, Input, Icon, Container, Toggle, Dropdown, Navlink };
+export { Button, Input, Icon, Container, Toggle, Dropdown, Navlink, Loader };
