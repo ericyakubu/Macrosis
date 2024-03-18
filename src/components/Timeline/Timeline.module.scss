@@ -7,4 +7,19 @@
     min-width: 600px;
     min-height: 300px;
   }
+
+  .inputs {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    &__input {
+      width: 100%;
+      input {
+        width: 100%;
+      }
+    }
+  }
 }

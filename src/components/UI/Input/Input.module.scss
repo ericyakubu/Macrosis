@@ -67,3 +67,12 @@ $labelPosActive: translate(10px, -50px);
     }
   }
 }
+.container__input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.container__input::-webkit-outer-spin-button,
+.container__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

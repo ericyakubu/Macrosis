@@ -14,6 +14,9 @@
   --color-primary-transperent: rgba(255, 255, 255, 0.5);
   --color-secondary: rgb(128, 128, 128);
   --color-secondary-alt: rgb(30, 30, 30);
+  --color-green: rgba(0, 135, 0, 1);
+  --color-red: rgba(135, 0, 0, 1);
+  --color-orange: rgb(218, 141, 0);
 }
 
 @media (prefers-color-scheme: light) {
@@ -55,4 +58,16 @@ li {
 input {
   background: none;
   border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -moz-appearance: textfield !important;
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield !important;
+  margin: 0;
 }

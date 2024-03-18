@@ -1,0 +1,30 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  &__input {
+    width: 100%;
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.previous {
+  @include header1(1);
+  font-size: 48px;
+  &__text {
+    @include header3;
+    margin-right: 15px;
+  }
+
+  &__measure {
+    @include header4;
+    margin-left: 5px;
+  }
+}

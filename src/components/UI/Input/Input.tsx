@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent, HTMLInputTypeAttribute, useState } from "react";
 import classes from "./Input.module.scss";
 import cn from "classnames";
 
@@ -6,7 +6,7 @@ type InputProps = {
   label: string;
   disabled?: boolean;
   className?: string;
-  type?: "text" | "number" | "password" | "email" | "tel";
+  type?: HTMLInputTypeAttribute;
 };
 
 const Input: FunctionComponent<InputProps> = ({
@@ -20,6 +20,7 @@ const Input: FunctionComponent<InputProps> = ({
 
   //TODO try to make it more addaptive to options
 
+  // TODO fucking number type doesn't work in firefox
   return (
     <label
       className={cn(
@@ -37,7 +38,7 @@ const Input: FunctionComponent<InputProps> = ({
       <span className={classes.container__label}>{label}</span>
       <input
         className={classes.container__input}
-        type={type || "text"}
+        type={type}
         onChange={(e) => setVal(e.target.value)}
         disabled={disabled}
       />

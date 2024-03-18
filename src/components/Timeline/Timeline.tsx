@@ -1,6 +1,5 @@
 import { FunctionComponent } from "react";
 import classes from "./Timeline.module.scss";
-// import { PieChart } from "react-minimal-pie-chart";
 import { Container } from "../UI";
 import { Line } from "react-chartjs-2";
 import {
@@ -14,12 +13,6 @@ import {
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement);
 
 // TODO fix the chart
-
-// const data = [
-//   { title: "Protein", value: 10, color: "#E38627" },
-//   { title: "Carbs", value: 15, color: "#C13C37" },
-//   { title: "Fat", value: 20, color: "#6A2135" },
-// ];
 
 const data = {
   labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
@@ -68,15 +61,6 @@ const Timeline: FunctionComponent = () => {
   return (
     <>
       <Container className={classes.container}>
-        {/* <PieChart className={classes.pieChart__chart} animate data={data} />
-      <ul className={classes.pieChart__labels}>
-        {data.map((macro) => (
-          <li className={classes.pieChart__label} key={`macro-${macro.title}`}>
-            <span style={{ background: macro.color }} />
-            {macro.title}
-          </li>
-        ))}
-      </ul> */}
         <Line
           data={data}
           options={options}

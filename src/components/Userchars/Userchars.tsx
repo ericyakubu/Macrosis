@@ -12,7 +12,7 @@ const Userchars: FunctionComponent = () => {
       </h2>
       <div className={classes.container__inputs}>
         <div className={classes.container__input}>
-          <Input label="Weight" />
+          <Input label="Weight" type="number" />
           <Toggle
             option1="kg"
             option2="lbs"
@@ -21,16 +21,16 @@ const Userchars: FunctionComponent = () => {
           />
         </div>
         <div className={classes.container__input}>
-          <Input label="Height" />
+          <Input label="Height" type="number" />
           <Toggle
             option1="cm"
-            option2="in"
+            option2="ft"
             firstOptionActive={heightCM}
             onClick={() => setHeightCM(!heightCM)}
           />
         </div>
-        <Input label="Age" />
-        <Input label="Disabled" disabled />
+        <Input label="Age" type="number" />
+        <Input label="Disabled" type="number" disabled />
       </div>
     </Container>
   );
