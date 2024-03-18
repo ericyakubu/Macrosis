@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import classes from "./Piechart.module.scss";
+import classes from "./Timeline.module.scss";
 // import { PieChart } from "react-minimal-pie-chart";
 import { Container } from "../UI";
 import { Line } from "react-chartjs-2";
@@ -12,6 +12,8 @@ import {
 } from "chart.js";
 
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement);
+
+// TODO fix the chart
 
 // const data = [
 //   { title: "Protein", value: 10, color: "#E38627" },
@@ -62,7 +64,7 @@ const options = {
   // },
 };
 
-const Piechart: FunctionComponent = () => {
+const Timeline: FunctionComponent = () => {
   return (
     <>
       <Container className={classes.container}>
@@ -78,6 +80,7 @@ const Piechart: FunctionComponent = () => {
         <Line
           data={data}
           options={options}
+          className={classes.container__chart}
           // {...props}
         />
       </Container>
@@ -85,4 +88,4 @@ const Piechart: FunctionComponent = () => {
   );
 };
 
-export default Piechart;
+export default Timeline;

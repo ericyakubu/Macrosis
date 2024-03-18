@@ -2,7 +2,7 @@
 @import "../../styles/variables.scss";
 
 .landing {
-  padding: 24px;
+  @include pagePadding;
   height: fit-content;
   max-height: 100vh;
   overflow-x: hidden;

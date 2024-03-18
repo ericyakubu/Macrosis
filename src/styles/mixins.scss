@@ -108,3 +108,8 @@
     letter-spacing: 2px;
   }
 }
+
+@mixin pagePadding {
+  padding: 24px;
+  width: 100%;
+}
