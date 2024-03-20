@@ -1,7 +1,10 @@
 export type InitialStateType = {
-  name: string | null;
-  email: string | null;
-  photo: string | null;
+  name: {
+    first: string;
+    last: string;
+  };
+  email: string;
+  photo: string;
   age: number;
   weight: {
     kg: number;
@@ -16,16 +19,16 @@ export type InitialStateType = {
       kg: number;
       lb: number;
     };
-    date: Date;
+    date: number;
   }[];
-  startDate: Date;
+  startDate: number;
   goal: {
     type: "lose" | "maintain" | "gain";
     wight: {
       kg: number;
       lb: number;
     };
-    date: Date;
+    date: number;
   };
   workout: {
     workingOut: boolean;

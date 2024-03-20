@@ -11,6 +11,7 @@ export const {
   // removeJobPosition,
   // changeJobPositionStatus,
   // changeSearchPositionQuery,
+  setUserLoginDetails,
 } = userSlice.actions;
 
 export default userSlice.reducer;
