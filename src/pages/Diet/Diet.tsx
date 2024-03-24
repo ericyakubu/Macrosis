@@ -25,6 +25,7 @@ const Diet: FunctionComponent = () => {
         </p>
       </Container>
       <FoodFilter />
+      <Container>recepies</Container>
     </main>
   );
 };

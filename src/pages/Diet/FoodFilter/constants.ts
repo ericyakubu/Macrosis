@@ -1,3 +1,4 @@
-const foodtype = ["soup", "soup"] as const;
+const foodType = ["Soups", "soup"] as const;
+const dietType = ["Vegan", "Vegeterian", "Pesceterian"] as const;
 
-export { foodtype };
+export { foodType, dietType };

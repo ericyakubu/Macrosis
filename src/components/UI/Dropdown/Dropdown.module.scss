@@ -3,6 +3,8 @@
 
 .dropdown {
   width: fit-content;
+  height: fit-content;
+
   &__selected {
     border-radius: 10px;
     background: $grey-light;

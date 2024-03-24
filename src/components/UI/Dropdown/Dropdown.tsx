@@ -8,12 +8,14 @@ type Props = {
   option: string;
   options: string[];
   setOptions: SetOptionsFunction;
+  clasNames?: string;
 };
 
 const Dropdown: FunctionComponent<Props> = ({
   options,
   setOptions,
   option,
+  clasNames,
 }) => {
   const [showOptions, setShowOptions] = useState<boolean>(false);
   const [selected, setSelected] = useState<string>("Select");
@@ -25,8 +27,10 @@ const Dropdown: FunctionComponent<Props> = ({
     setShowOptions(false);
   };
 
+  // TODO add placeholder
+
   return (
-    <div className={classes.dropdown}>
+    <div className={cn([classes.dropdown, clasNames])}>
       <button
         className={cn([
           classes.dropdown__selected,
@@ -40,6 +44,7 @@ const Dropdown: FunctionComponent<Props> = ({
         <span className={classes.dropdown__text}>{selected}</span>
         <Icon icon="arrow-down" size={32} />
       </button>
+
       <div
         className={cn([
           classes.dropdown__options,
