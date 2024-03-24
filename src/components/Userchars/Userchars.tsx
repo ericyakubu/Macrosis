@@ -1,15 +1,10 @@
 import { FunctionComponent, useState } from "react";
 import { Container, Input, Toggle } from "../UI";
 import classes from "./Userchars.module.scss";
-import {
-  // FieldValues,
-  SubmitHandler,
-  // UseFormRegister,
-  useForm,
-} from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 
-// import * as yup from "yup";
-// import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
 
 interface FormInputs {
   weight: number;
@@ -20,22 +15,25 @@ interface FormInputs {
 const Userchars: FunctionComponent = () => {
   const [weightKG, setWeightKG] = useState<boolean>(true);
   const [heightCM, setHeightCM] = useState<boolean>(true);
-  // const validationSchema = yup.object().shape({
-  //   weight: yup.number().required(),
-  // });
+  const validationSchema = yup.object().shape({
+    weight: yup.number().required().max(500),
+    height: yup.number().required().max(500),
+    age: yup.number().required().max(100),
+  });
 
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<FormInputs>();
+  } = useForm<FormInputs>({
+    resolver: yupResolver(validationSchema),
+  });
 
-  // const onSubmit = () => {
-  //   console.log("data");
-  // };
   const onSubmit: SubmitHandler<FormInputs> = (data) => {
     console.log(data);
   };
+
+  // TODO add convert from normal and retarded
   return (
     <Container className={classes.container}>
       <h2 className={classes.container__title}>
@@ -80,6 +78,7 @@ const Userchars: FunctionComponent = () => {
           error={errors.age}
         />
         {/* <Input label="Disabled" type="number" disabled /> */}
+        {/* <Button type="submit">check</Button> */}
       </form>
     </Container>
   );

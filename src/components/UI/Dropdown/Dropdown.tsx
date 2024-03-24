@@ -2,21 +2,28 @@ import { FunctionComponent, useState } from "react";
 import classes from "./Dropdown.module.scss";
 import cn from "classnames";
 import Icon from "../Icon";
+import { SetOptionsFunction } from "@/components/types";
 
 type Props = {
+  option: string;
   options: string[];
+  setOptions: SetOptionsFunction;
 };
 
-const Dropdown: FunctionComponent<Props> = ({ options }) => {
+const Dropdown: FunctionComponent<Props> = ({
+  options,
+  setOptions,
+  option,
+}) => {
   const [showOptions, setShowOptions] = useState<boolean>(false);
   const [selected, setSelected] = useState<string>("Select");
 
   const handleSelect = (num: number) => {
-    setSelected(options[num]);
+    const opt = options[num];
+    setSelected(opt);
+    setOptions(option, opt);
     setShowOptions(false);
   };
-
-  //TODO add icon and try to make it more refined
 
   return (
     <div className={classes.dropdown}>

@@ -48,6 +48,10 @@ $labelPosActive: translate(10px, -50px);
     width: 250px;
     @include text-2();
     @include box-shadow-tiny();
+
+    &_error {
+      border: red;
+    }
   }
 
   &:hover,
