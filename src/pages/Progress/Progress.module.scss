@@ -2,5 +2,5 @@
 @import "../../styles/variables.scss";
 
 .progress {
-  @include pagePadding;
+  @include pageWrapper;
 }

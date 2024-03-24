@@ -1,3 +1,5 @@
+//! if any of these changes, change it in the Goal component as well
+
 const oftenOptions = ["Daily", "Weekly", "Monthly", "Never"] as const;
 const workoutType = [
   "Strength training",
@@ -6,6 +8,8 @@ const workoutType = [
   "Cardio",
 ] as const;
 const workoutIntensity = ["Beginner", "Intermediate", "Advanced"] as const;
-const goal = ["Lose weight", "Maintain", "Gain muscle mass"] as const;
+const goalType = ["Lose weight", "Maintain", "Gain muscle mass"] as const;
 
-export { oftenOptions, workoutType, workoutIntensity, goal };
+//! if any of these changes, change it in the Goal component as well
+
+export { oftenOptions, workoutType, workoutIntensity, goalType };

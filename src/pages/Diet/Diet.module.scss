@@ -1,6 +1,32 @@
 @import "../../styles/mixins.scss";
 @import "../../styles/variables.scss";
 
-.diet {
-  @include pagePadding;
+@mixin centerText {
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  @include pageWrapper;
+}
+
+.top {
+  gap: 12px;
+
+  &__title {
+    @include header2();
+    @include centerText();
+  }
+  &__text {
+    @include header4();
+    @include centerText();
+    &__premium {
+      @include header4();
+      @include centerText();
+
+      &__bait {
+        color: $orange;
+      }
+    }
+  }
 }

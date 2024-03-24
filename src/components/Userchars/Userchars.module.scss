@@ -12,15 +12,14 @@
   }
 
   &__inputs {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 48px;
+    @include grid;
+    column-gap: 24px;
+    row-gap: 48px;
   }
 
   &__input {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 4px;
   }
 }

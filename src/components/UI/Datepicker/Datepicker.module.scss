@@ -1,0 +1,42 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+$outline: 1px solid $white-transperent;
+$labelOpacityInit: 0.5;
+$labelOpacityActive: 0.75;
+$labelPosInit: translate(25px, 0);
+$labelPosActive: translate(10px, -50px);
+
+.container {
+  @include box-shadow-tiny();
+  border-radius: 10px;
+  width: 250px;
+
+  svg {
+    display: none;
+  }
+
+  input {
+    transition: all 0.25s ease-in-out;
+    outline: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background: $grey-light;
+    width: 250px;
+    @include text-2();
+    color: $white-transperent;
+
+    &:hover,
+    &:active,
+    &:focus {
+      outline: $outline;
+      @include box-shadow-tiny();
+      opacity: $labelOpacityActive;
+      color: $white;
+
+      &[disabled] {
+        outline: none;
+      }
+    }
+  }
+}

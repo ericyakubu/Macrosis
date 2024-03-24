@@ -8,7 +8,8 @@ const Landing: FunctionComponent = () => {
     <main className={classes.landing}>
       <Userchars />
       <Goal />
-      <Button className={classes.button}>
+      {/* TODO add submittion of information */}
+      <Button className={classes.button} type="submit">
         <Icon icon="save" size={32} /> Save
       </Button>
     </main>

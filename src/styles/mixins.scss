@@ -125,7 +125,7 @@
   }
 }
 
-@mixin pagePadding {
+@mixin pageWrapper {
   padding: 24px;
   width: 100%;
   display: flex;
@@ -134,4 +134,14 @@
   height: fit-content;
   max-height: 100vh;
   overflow-x: hidden;
+  max-width: 1475px;
+  margin: 0 auto;
+}
+
+@mixin grid($gap: 24px) {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+  align-items: flex-start;
 }

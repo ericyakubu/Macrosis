@@ -1,0 +1,45 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.react-datepicker-popper {
+  @include box-shadow-tiny();
+  z-index: 1000;
+}
+.react-datepicker {
+  background: $grey-light;
+  border: none;
+  border-radius: 10px;
+}
+
+.react-datepicker__header {
+  background: $grey-light;
+  border-radius: 10px;
+  border: none;
+}
+
+.react-datepicker__month-container {
+  @include text-2();
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name,
+.react-datepicker__day {
+  color: $white;
+}
+
+.react-datepicker__day {
+  &:hover {
+    color: $grey-light;
+  }
+}
+
+.react-datepicker__day--selected {
+  background: $orange;
+  &:hover {
+    background: $orange;
+  }
+}
+
+.react-datepicker__day--outside-month {
+  color: $grey;
+}
