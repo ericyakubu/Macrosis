@@ -23,7 +23,7 @@ const Section: FunctionComponent<Props> = ({
   className,
   steps,
 }) => {
-  // TODO adjust list span styling
+  // TODO make styling better
   return (
     <div className={cn([classes.section, className])}>
       <SectionTitle title={title} show={show} onClick={onClick} />

@@ -27,7 +27,7 @@ const Input: FunctionComponent<InputProps> = forwardRef<
   // console.log(error?.message);
 
   //TODO try to make it more addaptive to options
-  // TODO fucking number type doesn't work in firefox
+  //FIXME fucking number type doesn't work in firefox
   return (
     <>
       <label

@@ -19,7 +19,7 @@ const RecipesSection: FunctionComponent<Props> = ({
 }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  // TODO fix scrolling
+  // FIXME fix scrolling
   const handleHorizontalScroll = (e: WheelEvent<HTMLDivElement>) => {
     if (!scrollRef.current) return;
     scrollRef.current.scrollLeft += e.deltaY;

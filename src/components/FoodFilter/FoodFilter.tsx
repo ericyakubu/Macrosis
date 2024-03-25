@@ -28,7 +28,7 @@ const FoodFilter: FunctionComponent = () => {
   const handleSearch = () => {};
   const expandSearch = () => setExpand(!expand);
 
-  // TODO adaptation needed
+  // FIXME adaptation needed
   return (
     <Container className={classes.filter}>
       <div className={classes.filter__main}>

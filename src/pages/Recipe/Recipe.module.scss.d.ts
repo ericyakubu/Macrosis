@@ -8,17 +8,6 @@ declare const classNames: {
   readonly recipe__info__description: "recipe__info__description";
   readonly recipe__info__chips: "recipe__info__chips";
   readonly recipe__info__chips__chip: "recipe__info__chips__chip";
-  readonly recipe__ingredients: "recipe__ingredients";
-  readonly recipe__steps: "recipe__steps";
   readonly recipe__macros: "recipe__macros";
-  readonly recipe__ingredients__title: "recipe__ingredients__title";
-  readonly recipe__steps__title: "recipe__steps__title";
-  readonly recipe__macros__title: "recipe__macros__title";
-  readonly recipe__ingredients__list: "recipe__ingredients__list";
-  readonly recipe__steps__list: "recipe__steps__list";
-  readonly recipe__macros__list: "recipe__macros__list";
-  readonly recipe__ingredients__list__item: "recipe__ingredients__list__item";
-  readonly recipe__steps__list__item: "recipe__steps__list__item";
-  readonly recipe__macros__list__item: "recipe__macros__list__item";
 };
 export = classNames;

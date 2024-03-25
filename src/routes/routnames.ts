@@ -5,7 +5,7 @@ const macros = "/macros";
 const settings = "/settings";
 const community = "/community";
 const landing = "/";
-const donation = "/donation";
+const donate = "/donate";
 const help = "/help";
 const faq = "/faq";
 
@@ -17,7 +17,7 @@ export {
   settings,
   community,
   landing,
-  donation,
+  donate,
   help,
   faq,
 };

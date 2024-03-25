@@ -117,6 +117,7 @@ const Recipe: FunctionComponent = () => {
           onClick={() => toggleRecipes("steps")}
           show={show.steps}
         />
+        {/* XXX think about adding similar recipes section */}
       </Container>
     </main>
   );

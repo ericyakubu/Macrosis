@@ -1,4 +1,14 @@
+import {
+  community,
+  donate,
+  faq,
+  help,
+  macros,
+  recipes,
+  settings,
+} from "@/routes/routnames";
 import { IconNames } from "../UI/Icon/icon.d";
+import { progress } from "@/pages/Progress/Progress.module.scss";
 
 type LinksType = {
   link: string;
@@ -8,17 +18,17 @@ type LinksType = {
 
 export const LinksTop: LinksType[] = [
   {
-    link: "/macros",
+    link: macros,
     icon: "chart-pie",
     name: "Macros",
   },
   {
-    link: "/progress",
+    link: progress,
     icon: "graph",
     name: "Progress",
   },
   {
-    link: "/recipes",
+    link: recipes,
     icon: "apple",
     name: "Recipes",
   },
@@ -26,27 +36,27 @@ export const LinksTop: LinksType[] = [
 
 export const LinksBottom: LinksType[] = [
   {
-    link: "/settings",
+    link: settings,
     icon: "settings",
     name: "Settings",
   },
   {
-    link: "/community",
+    link: community,
     icon: "community",
     name: "Community",
   },
   {
-    link: "/donate",
+    link: donate,
     icon: "donate",
     name: "Donate",
   },
   {
-    link: "/help",
+    link: help,
     icon: "help",
     name: "Help",
   },
   {
-    link: "/faq",
+    link: faq,
     icon: "faq",
     name: "FAQ",
   },

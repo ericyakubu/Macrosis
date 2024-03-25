@@ -48,7 +48,7 @@ const Goal: FunctionComponent = () => {
   };
 
   //TODO add datepicker for goal (goal is optional, datepicker is required)
-  //TODO adjust styling (for big screens)
+  //FIXME adjust styling (for big screens)
   return (
     <Container className={classes.container}>
       <div className={classes.container__section}>

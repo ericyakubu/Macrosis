@@ -27,7 +27,7 @@ const ProgressSatisfaction: FunctionComponent = () => {
         size={256}
         className={classes.results__icon}
       />
-      {/* TODO fix text for failure and warning */}
+      {/* FIXME fix text for failure and warning */}
       {success && (
         <>
           <h3 className={classes.results__text__title}>You are on track!</h3>

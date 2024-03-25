@@ -12,7 +12,7 @@ import {
 
 ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement);
 
-// TODO fix the chart
+// FIXME fix the chart
 
 const data = {
   labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],

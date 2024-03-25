@@ -80,7 +80,7 @@ const RecipesComponent: FunctionComponent = () => {
   // TODO add smooth transition to show/hide recipes
   return (
     <Container className={classes.recipes}>
-      {/*TODO show recent and community favorites by default */}
+      {/*FIXME show recent and community favorites by default */}
       <RecipesSection
         onClick={() => toggleRecipes("recent")}
         recipes={test}
@@ -93,7 +93,7 @@ const RecipesComponent: FunctionComponent = () => {
         show={showRecipes.favorites}
         title={"Community favorites"}
       />
-      {/*TODO show search results when search/filter was set and hide above sections */}
+      {/*FIXME show search results when search/filter was set and hide above sections */}
       <RecipesSection
         onClick={() => toggleRecipes("searchResults")}
         recipes={test}
