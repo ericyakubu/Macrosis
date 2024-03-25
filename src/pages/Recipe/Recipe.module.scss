@@ -1,0 +1,75 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.page {
+  @include pageWrapper;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__top {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__img {
+    border-radius: 10px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    &__title {
+      @include header2();
+      font-size: 48px;
+    }
+
+    &__description {
+      @include text-3($white-transperent);
+      margin-bottom: 24px;
+    }
+
+    &__chips {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+
+      &__chip {
+        @include text-2();
+      }
+    }
+  }
+
+  &__ingredients,
+  &__steps,
+  &__macros {
+    width: 100%;
+    &__title {
+      @include header2();
+      margin-bottom: 24px;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      width: 100%;
+      margin-top: 24px;
+
+      &__item {
+        @include text-3($white-transperent);
+        font-size: 20px;
+        // list-style: disc;
+        // margin-left: 20px;
+      }
+    }
+  }
+
+  &__macros {
+    width: 100%;
+  }
+}

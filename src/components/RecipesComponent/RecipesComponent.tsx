@@ -2,7 +2,7 @@ import { FunctionComponent, useState } from "react";
 import { Container } from "@/components/UI";
 import classes from "./RecipesComponent.module.scss";
 import RecipesSection from "./RecipesSection";
-import { RecipeType } from "./types";
+import { RecipeType } from "@/types";
 
 const test: RecipeType[] = [
   {

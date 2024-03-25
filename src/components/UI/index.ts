@@ -8,6 +8,7 @@ import Navlink from "./Navlink";
 import Loader from "./Loader";
 import Datepicker from "./Datepicker";
 import Chip from "./Chip";
+import SectionTitle from "./SectionTitle";
 
 export {
   Button,
@@ -20,4 +21,5 @@ export {
   Loader,
   Datepicker,
   Chip,
+  SectionTitle,
 };

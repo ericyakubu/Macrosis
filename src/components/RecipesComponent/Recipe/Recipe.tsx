@@ -3,16 +3,7 @@ import classes from "./Recipe.module.scss";
 import { Link } from "react-router-dom";
 import { Chip, Icon } from "@/components/UI";
 import { recipes } from "@/routes/routnames";
-
-type RecipeType = {
-  name: string;
-  link: string;
-  img: string;
-  description: string;
-  servings: number;
-  diet: string;
-  favorite: boolean;
-};
+import { RecipeType } from "@/types";
 
 type Props = {
   recipe: RecipeType;

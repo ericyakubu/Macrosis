@@ -1,11 +1,11 @@
-import { FunctionComponent, useRef, WheelEvent } from "react";
+import { FunctionComponent, useRef, WheelEvent, MouseEvent } from "react";
 import cn from "classnames";
 import classes from "./RecipesSection.module.scss";
-import { Icon } from "@/components/UI";
+import { SectionTitle } from "@/components/UI";
 import Recipe from "../Recipe";
-import { RecipeType } from "../types";
+import { RecipeType } from "@/types";
 type Props = {
-  onClick: () => void;
+  onClick?: (e?: MouseEvent<HTMLButtonElement>) => void;
   recipes: RecipeType[];
   show: boolean;
   title: string;
@@ -31,14 +31,7 @@ const RecipesSection: FunctionComponent<Props> = ({
         [classes.section__hidden]: !show,
       })}
     >
-      <button
-        className={cn(classes.section__title, {
-          [classes.section__title__active]: show,
-        })}
-        onClick={onClick}
-      >
-        {title} <Icon icon="arrow-down" size={32} />
-      </button>
+      <SectionTitle onClick={onClick} show={show} title={title} />
 
       <div
         className={cn(classes.section__content, {

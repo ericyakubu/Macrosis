@@ -1,0 +1,29 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.title {
+  position: relative;
+  width: 100%;
+  padding-bottom: 10px;
+  @include header3();
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  svg {
+    width: 16px;
+    transform: rotate(0deg);
+    transition: $transition-fast;
+  }
+
+  &::after {
+    @include underline(75%);
+  }
+
+  &__active {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}

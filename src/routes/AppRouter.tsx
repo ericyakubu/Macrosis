@@ -11,6 +11,7 @@ import { Loader } from "@/components/UI";
 import { landing, progress, recipe, recipes } from "./routnames";
 
 const Recipes = lazy(() => import("@/pages/Recipes"));
+const Recipe = lazy(() => import("@/pages/Recipe"));
 const Progress = lazy(() => import("@/pages/Progress"));
 const Landing = lazy(() => import("@/pages/Landing"));
 
@@ -38,7 +39,7 @@ const AppRouter: FunctionComponent = () => {
           path={recipe}
           element={
             <Suspense fallback={<Loader />}>
-              <Recipes />
+              <Recipe />
             </Suspense>
           }
         />
