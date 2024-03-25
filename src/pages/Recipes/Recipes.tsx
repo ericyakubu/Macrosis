@@ -5,7 +5,7 @@ import FoodFilter from "../../components/FoodFilter";
 import { RecipesComponent } from "@/components";
 
 // TODO finish this page
-
+// TODO play with fonts
 const Diet: FunctionComponent = () => {
   return (
     <main className={classes.container}>

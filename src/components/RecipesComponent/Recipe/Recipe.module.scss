@@ -6,8 +6,9 @@
   flex-direction: column;
   width: 250px;
   padding: 12px;
+  margin: 6px;
   // gap: 5px;
-  @include box-shadow-small;
+  @include box-shadow-tiny;
   border-radius: 15px;
 
   &__img {

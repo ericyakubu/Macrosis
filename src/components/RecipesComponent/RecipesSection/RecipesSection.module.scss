@@ -1,0 +1,59 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.section {
+  width: 100%;
+  position: relative;
+  transition: $transition-fast;
+
+  &__hidden {
+    height: auto;
+  }
+
+  &__title {
+    position: relative;
+    width: 100%;
+    padding-bottom: 10px;
+    @include header3();
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    svg {
+      width: 16px;
+      transform: rotate(0deg);
+      transition: $transition-fast;
+    }
+
+    &::after {
+      @include underline(75%);
+    }
+
+    &__active {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__content {
+    height: 0px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    overflow-x: auto;
+    transition: $transition-fast;
+    // border-radius: 45px;
+
+    &:hover {
+      body {
+        overflow-y: hidden !important;
+      }
+    }
+
+    &__active {
+      height: 375px;
+    }
+  }
+}
