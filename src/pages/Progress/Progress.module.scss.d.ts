@@ -1,4 +1,2 @@
-declare const classNames: {
-  readonly progress: "progress";
-};
+declare const classNames: {};
 export = classNames;

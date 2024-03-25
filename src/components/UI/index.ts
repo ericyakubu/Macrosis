@@ -9,6 +9,7 @@ import Loader from "./Loader";
 import Datepicker from "./Datepicker";
 import Chip from "./Chip";
 import SectionTitle from "./SectionTitle";
+import Page from "./Page";
 
 export {
   Button,
@@ -22,4 +23,5 @@ export {
   Datepicker,
   Chip,
   SectionTitle,
+  Page,
 };

@@ -1,4 +1,2 @@
-declare const classNames: {
-  readonly help: "help";
-};
+declare const classNames: {};
 export = classNames;

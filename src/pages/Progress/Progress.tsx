@@ -1,17 +1,17 @@
 import { FunctionComponent } from "react";
-import classes from "./Progress.module.scss";
 import { Timeline } from "@/components";
 import ProgressSatisfaction from "./ProgressSatisfaction";
 import UpdateWeight from "./UpdateWeight";
+import { Page } from "@/components/UI";
 
 //TODO finish this page
 const Progress: FunctionComponent = () => {
   return (
-    <main className={classes.progress}>
+    <Page>
       <Timeline />
       <UpdateWeight />
       <ProgressSatisfaction />
-    </main>
+    </Page>
   );
 };
 

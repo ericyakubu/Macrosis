@@ -1,5 +1,5 @@
 import { FunctionComponent, useState } from "react";
-import { Chip, Container } from "@/components/UI";
+import { Chip, Container, Page } from "@/components/UI";
 import { ExtendedRecipe, ShowType } from "./type";
 import Section from "./Section";
 import classes from "./Recipe.module.scss";
@@ -76,7 +76,7 @@ const Recipe: FunctionComponent = () => {
   };
 
   return (
-    <main className={classes.page}>
+    <Page>
       <Container className={classes.recipe}>
         <div className={classes.recipe__top}>
           <img src={test.img} alt={test.name} className={classes.recipe__img} />
@@ -119,7 +119,7 @@ const Recipe: FunctionComponent = () => {
         />
         {/* XXX think about adding similar recipes section */}
       </Container>
-    </main>
+    </Page>
   );
 };
 

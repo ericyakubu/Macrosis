@@ -1,5 +1,4 @@
 declare const classNames: {
-  readonly container: "container";
   readonly top: "top";
   readonly top__title: "top__title";
   readonly top__text: "top__text";

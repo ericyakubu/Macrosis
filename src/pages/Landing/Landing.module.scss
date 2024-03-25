@@ -2,7 +2,6 @@
 @import "../../styles/variables.scss";
 
 .landing {
-  @include pageWrapper;
   column-count: 2;
 }
 

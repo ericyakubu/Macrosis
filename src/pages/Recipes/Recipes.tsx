@@ -1,5 +1,5 @@
 import { FunctionComponent } from "react";
-import { Container } from "@/components/UI";
+import { Container, Page } from "@/components/UI";
 import classes from "./Recipes.module.scss";
 import FoodFilter from "../../components/FoodFilter";
 import { RecipesComponent } from "@/components";
@@ -8,7 +8,7 @@ import { RecipesComponent } from "@/components";
 // TODO play with fonts
 const Diet: FunctionComponent = () => {
   return (
-    <main className={classes.container}>
+    <Page>
       <Container className={classes.top}>
         <h1 className={classes.top__title}>
           Don't know what to eat? No problem! We got you covered!
@@ -27,7 +27,7 @@ const Diet: FunctionComponent = () => {
       </Container>
       <FoodFilter />
       <RecipesComponent />
-    </main>
+    </Page>
   );
 };
 

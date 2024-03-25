@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import classes from "./Recipe.module.scss";
 import { Link } from "react-router-dom";
 import { Chip, Icon } from "@/components/UI";
-import { recipes } from "@/routes/routnames";
+import { recipesRoute } from "@/routes/routnames";
 import { RecipeType } from "@/types";
 
 type Props = {
@@ -14,7 +14,10 @@ const Recipe: FunctionComponent<Props> = ({ recipe }) => {
     <>
       {!!recipe.link && (
         <div className={classes.container}>
-          <Link to={`${recipes}/${recipe.link}`} className={classes.recipe}>
+          <Link
+            to={`${recipesRoute}/${recipe.link}`}
+            className={classes.recipe}
+          >
             <img
               src={recipe.img}
               alt={recipe.name}

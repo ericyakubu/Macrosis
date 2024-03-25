@@ -1,5 +1,4 @@
 declare const classNames: {
-  readonly page: "page";
   readonly recipe: "recipe";
   readonly recipe__top: "recipe__top";
   readonly recipe__img: "recipe__img";

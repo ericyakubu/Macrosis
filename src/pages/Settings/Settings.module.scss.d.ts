@@ -1,4 +1,2 @@
-declare const classNames: {
-  readonly settings: "settings";
-};
+declare const classNames: {};
 export = classNames;
