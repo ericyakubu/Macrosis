@@ -9,13 +9,13 @@ import {
 
 import { Loader } from "@/components/UI";
 import {
-  donate,
-  help,
-  landing,
-  progress,
-  recipe,
-  recipes,
-  settings,
+  donateRoute,
+  helpRoute,
+  landingRoute,
+  progressRoute,
+  recipeRoute,
+  recipesRoute,
+  settingsRoute,
 } from "./routnames";
 
 const Recipes = lazy(() => import("@/pages/Recipes"));
@@ -31,7 +31,7 @@ const AppRouter: FunctionComponent = () => {
     createRoutesFromElements(
       <Route element={<Layout />}>
         <Route
-          path={landing}
+          path={landingRoute}
           element={
             <Suspense fallback={<Loader />}>
               <Landing />
@@ -39,7 +39,7 @@ const AppRouter: FunctionComponent = () => {
           }
         />
         <Route
-          path={recipes}
+          path={recipesRoute}
           element={
             <Suspense fallback={<Loader />}>
               <Recipes />
@@ -47,7 +47,7 @@ const AppRouter: FunctionComponent = () => {
           }
         />
         <Route
-          path={recipe}
+          path={recipeRoute}
           element={
             <Suspense fallback={<Loader />}>
               <Recipe />
@@ -55,7 +55,7 @@ const AppRouter: FunctionComponent = () => {
           }
         />
         <Route
-          path={progress}
+          path={progressRoute}
           element={
             <Suspense fallback={<Loader />}>
               <Progress />
@@ -63,7 +63,7 @@ const AppRouter: FunctionComponent = () => {
           }
         />
         <Route
-          path={settings}
+          path={settingsRoute}
           element={
             <Suspense fallback={<Loader />}>
               <Settings />
@@ -71,7 +71,7 @@ const AppRouter: FunctionComponent = () => {
           }
         />
         <Route
-          path={help}
+          path={helpRoute}
           element={
             <Suspense fallback={<Loader />}>
               <Help />
@@ -79,7 +79,7 @@ const AppRouter: FunctionComponent = () => {
           }
         />
         <Route
-          path={donate}
+          path={donateRoute}
           element={
             <Suspense fallback={<Loader />}>
               <Donate />

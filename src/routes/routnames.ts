@@ -1,23 +1,23 @@
-const recipes = "/recipes";
-const recipe = "/recipes/:id";
-const progress = "/progress";
-const macros = "/macros";
-const settings = "/settings";
-const community = "/community";
-const landing = "/";
-const donate = "/donate";
-const help = "/help";
-const faq = "/faq";
+const recipesRoute = "/recipes";
+const recipeRoute = "/recipes/:id";
+const progressRoute = "/progress";
+const macrosRoute = "/macros";
+const settingsRoute = "/settings";
+const communityRoute = "/community";
+const landingRoute = "/";
+const donateRoute = "/donate";
+const helpRoute = "/help";
+const faqRoute = "/faq";
 
 export {
-  recipes,
-  recipe,
-  progress,
-  macros,
-  settings,
-  community,
-  landing,
-  donate,
-  help,
-  faq,
+  recipesRoute,
+  recipeRoute,
+  progressRoute,
+  macrosRoute,
+  settingsRoute,
+  communityRoute,
+  landingRoute,
+  donateRoute,
+  helpRoute,
+  faqRoute,
 };
