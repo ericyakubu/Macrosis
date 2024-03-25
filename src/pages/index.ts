@@ -1,5 +1,5 @@
 import Landing from "./Landing";
 import Progress from "./Progress";
-import Diet from "./Diet";
+import Recipes from "./Recipes";
 
-export { Landing, Progress, Diet };
+export { Landing, Progress, Recipes };

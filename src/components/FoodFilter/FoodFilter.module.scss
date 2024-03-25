@@ -1,5 +1,5 @@
-@import "../../../styles/mixins.scss";
-@import "../../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
 
 .filter {
   padding-top: 48px;
@@ -29,23 +29,28 @@
 
   &__search {
     width: 100%;
+    min-width: 250px;
     input {
       width: 100%;
+      min-width: 250px;
     }
   }
 
   &__category {
     width: 100%;
     max-width: 400px;
+    min-width: 250px;
     button {
       width: 100%;
       max-width: 400px;
+      min-width: 250px;
     }
   }
 
   &__categories {
     width: 100%;
     display: flex;
+    // flex-wrap: wrap;
     gap: 12px;
     transition: $transition-fast;
 

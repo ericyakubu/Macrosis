@@ -1,7 +1,8 @@
 import { FunctionComponent } from "react";
 import { Container } from "@/components/UI";
-import classes from "./Diet.module.scss";
-import FoodFilter from "./FoodFilter";
+import classes from "./Recipes.module.scss";
+import FoodFilter from "../../components/FoodFilter";
+import { RecipesComponent } from "@/components";
 
 // TODO finish this page
 
@@ -25,7 +26,7 @@ const Diet: FunctionComponent = () => {
         </p>
       </Container>
       <FoodFilter />
-      <Container>recepies</Container>
+      <RecipesComponent />
     </main>
   );
 };

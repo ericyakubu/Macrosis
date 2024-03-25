@@ -1,0 +1,48 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  padding: 12px;
+  // gap: 5px;
+  @include box-shadow-small;
+  border-radius: 15px;
+
+  &__img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  &__title {
+    @include text-3();
+  }
+
+  &__description {
+    @include text-2($white-transperent);
+  }
+
+  &__chips {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+
+.container {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+
+  .favorite {
+    position: absolute;
+    top: 7.5%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+    fill: $red;
+  }
+}

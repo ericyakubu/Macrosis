@@ -1,0 +1,12 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.chip {
+  // @include text-1($grey-dark);
+  @include text-1();
+  padding: 1px 8px;
+  border-radius: 15px;
+  background-color: $grey;
+  @include box-shadow-tiny();
+  font-weight: 500;
+}

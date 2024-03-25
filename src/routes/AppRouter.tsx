@@ -8,8 +8,9 @@ import {
 } from "react-router-dom";
 
 import { Loader } from "@/components/UI";
+import { landing, progress, recipe, recipes } from "./routnames";
 
-const Diet = lazy(() => import("@/pages/Diet"));
+const Recipes = lazy(() => import("@/pages/Recipes"));
 const Progress = lazy(() => import("@/pages/Progress"));
 const Landing = lazy(() => import("@/pages/Landing"));
 
@@ -18,7 +19,7 @@ const AppRouter: FunctionComponent = () => {
     createRoutesFromElements(
       <Route element={<Layout />}>
         <Route
-          path="/"
+          path={landing}
           element={
             <Suspense fallback={<Loader />}>
               <Landing />
@@ -26,15 +27,23 @@ const AppRouter: FunctionComponent = () => {
           }
         />
         <Route
-          path="/diet"
+          path={recipes}
           element={
             <Suspense fallback={<Loader />}>
-              <Diet />
+              <Recipes />
             </Suspense>
           }
         />
         <Route
-          path="/progress"
+          path={recipe}
+          element={
+            <Suspense fallback={<Loader />}>
+              <Recipes />
+            </Suspense>
+          }
+        />
+        <Route
+          path={progress}
           element={
             <Suspense fallback={<Loader />}>
               <Progress />

@@ -7,6 +7,7 @@ import Dropdown from "./Dropdown";
 import Navlink from "./Navlink";
 import Loader from "./Loader";
 import Datepicker from "./Datepicker";
+import Chip from "./Chip";
 
 export {
   Button,
@@ -18,4 +19,5 @@ export {
   Navlink,
   Loader,
   Datepicker,
+  Chip,
 };

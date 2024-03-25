@@ -5,13 +5,13 @@ import { foodType, dietType } from "./constants";
 import classes from "./FoodFilter.module.scss";
 import cn from "classnames";
 
-type FoodFilter = {
+type FoodFilterType = {
   foodType: string;
   dietType: string;
 };
 
 const FoodFilter: FunctionComponent = () => {
-  const [options, setOptions] = useState<FoodFilter>({
+  const [options, setOptions] = useState<FoodFilterType>({
     foodType: "",
     dietType: "",
   });
@@ -28,6 +28,7 @@ const FoodFilter: FunctionComponent = () => {
   const handleSearch = () => {};
   const expandSearch = () => setExpand(!expand);
 
+  // TODO adaptation needed
   return (
     <Container className={classes.filter}>
       <div className={classes.filter__main}>
@@ -69,6 +70,9 @@ const FoodFilter: FunctionComponent = () => {
         </Button>
         <Button className={classes.filter__btns} onClick={expandSearch}>
           <Icon icon="sort-z-a" size={24} />
+        </Button>
+        <Button className={classes.filter__btns} onClick={expandSearch}>
+          <Icon icon="heart-filled" size={24} />
         </Button>
       </div>
     </Container>
