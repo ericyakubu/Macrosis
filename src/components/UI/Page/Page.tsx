@@ -8,7 +8,11 @@ type Props = {
 };
 
 const Page: FunctionComponent<Props> = ({ children, className }) => {
-  return <main className={cn([classes.page, className])}>{children}</main>;
+  return (
+    <main className={cn([classes.page, className])}>
+      <div className={classes.page__content}>{children}</div>
+    </main>
+  );
 };
 
 export default Page;

@@ -3,4 +3,13 @@
 
 .page {
   @include pageWrapper;
+  height: fit-content;
+
+  &__content {
+    width: 100%;
+    max-width: 1475px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
 }
